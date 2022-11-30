@@ -1,0 +1,16 @@
+body {
+    background-color: gray;
+    color: rgb(255,255,255);
+}
+
+    #myfont{
+        font-style: italic;
+    }
+
+    .mycolor_font {
+        color: rgb(60, 175, 201);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 100%;
+    }
+
+  

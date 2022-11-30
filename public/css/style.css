@@ -1,0 +1,55 @@
+body{
+    background-color: #b13333;
+    background-color: hsl(0, 0%, 95%);
+    background-size: 100%;
+    color:rgb(255,0,0);
+    font-family: Impact, Haettenschweiler,'Arial Narrow Bald', sans-serif;
+    font-size: 50%;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: -5%,5%,5%,#000;
+    background-image: url(../images/texture.png);
+    background-repeat: repeat;
+}
+
+.transparentgoat{
+    opacity: 0.5;
+}
+.opaquegoat{
+    opacity: 0.75;
+}
+
+#myp{
+    color: #000;
+}
+
+.opaquegoat, .transparentgoat,#myp{
+    opacity: 0.5;
+}
+
+#goodgoat:hover{
+    opacity: 1;
+    visibility: hidden;
+    display: none;
+}
+
+img{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+}
+
+#myp{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    bottom: 30px;
+    border-style: dashed;
+    border-color: darkgoldenrod;
+    border-radius: 50%;
+    padding: 5%;
+    margin: 21%;
+    border-bottom-color: aqua;
+
+}
