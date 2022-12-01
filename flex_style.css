@@ -1,0 +1,66 @@
+#banner > h1{
+    background-color: rgb(143, 210, 210);
+    text-align: center;
+    color: black;
+    font-size: 300%;   
+    font-family:  'Arial Narrow Bold', sans-serif;
+    padding: 0.5em;  
+    margin: 0; 
+    width: 100%;
+}
+
+
+#nav{
+    display: flex;
+    width: auto;
+    margin: auto;
+    background-color: rgb(8, 53, 8);
+    width: 100%;
+
+}
+
+#nav > a{
+    padding: 1%;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+    border-right: 2px solid black;
+    text-decoration: none;
+    margin: 0%;
+}
+
+#column-container{
+display:flex;
+}
+
+#column-container > div{
+    font-family: sans-serif;
+    padding-top: 0.5%;
+    padding-bottom: 30%;
+    margin: 0%;
+    text-align: left;
+    width: 100%;
+}
+ #column-1{
+    background-color: rgb(147, 145, 145);
+}
+
+#column-2{
+    background-color: rgb(179, 176, 176);
+}
+
+#column-3{
+    background-color: rgb(200, 196, 196);
+}
+
+#footer{
+    margin: 0;
+    color: white;
+    background-color: rgb(8, 53, 8);
+    font-size: 200%;   
+    font-family:  'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 0.5em;  
+    width: 100%;;
+}
+
