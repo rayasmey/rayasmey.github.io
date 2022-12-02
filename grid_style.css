@@ -36,33 +36,32 @@
 
 #column-container{
     grid-area: c;
-    display:flex;
-    width: 100%;
+    display:grid;
+    grid-template-areas:
+    "c1 c2 c3";
 }
 
 #column-container > div{
     font-family: sans-serif;
-    padding-top: 0.5%;
-    padding-bottom: 30%;
+    padding: 10px;
+    height: 300px;
     margin: 0%;
     text-align: left;
 }
  #column-1{
     grid-area: c1;
     background-color: rgb(147, 145, 145);
-    width: 33.3%;
+
 }
 
 #column-2{
     grid-area: c2;
     background-color: rgb(179, 176, 176);
-    width: 33.3%;
 }
 
 #column-3{
     grid-area: c3;
     background-color: rgb(200, 196, 196);
-    width: 33.3%;
 }
 
 #footer{
@@ -87,14 +86,12 @@ body{
 }
 
 @media screen and (max-width: 600px){
-    body{
-        display: grid;
+    #column-container{
+        /* display: grid; */
         grid-template-areas: 
-        'h  h   h '
-        'n  n   n'
-        'c1  c2'
-        'c3  c3 c3'
-        'f  f   f ';    
+        "c1 c2"
+        "c3 c3";
+         
     }
 }
 
