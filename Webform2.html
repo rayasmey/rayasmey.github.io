@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css”>
+    <link rel="stylesheet" href="Webform2.css">
+    <title>Form2</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mybg">
+        <a class="navbar-brand" href="#">MUM Golden Dome Market : : : SRM System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Suppliers</a>
+            </li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <label class="mr-sm-2">Hello!</label>
+            <button class="btn btn-light my-2 my-sm-0 signout" type="submit">Sign Out</button>
+        </form>
+        </div>
+    </nav>
+
+    <form id="mainform">
+        <h2>New Product Form</h2>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Product Number</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Quantity in stock</label>
+            <input type="number" class="form-control" id="inputPassword4" value="0">
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputAddress">Name</label>
+            <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="inputAddress2">Supplier</label>
+            <select id="inputState" class="form-control">
+                <option selected>Select a supplier</option>
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option>LG</option>
+                <option>Google</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Unit Price</label>
+            <input type="text" class="form-control" id="inputCity" value="0.0">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputState">Date supplied</label>
+            <input type="text" class="form-control" id="inputCity" value="yyyy-mm-dd">
+          </div>
+        </div>
+        <div class="align-right">
+            <a href="#" class="btn btn-outline-secondary" role="button" aria-pressed="true">Reset</a>
+            <a href="#" class="btn btn-outline-danger" role="button" aria-pressed="true">Cancel</a>
+            <a href="#" class="btn btn-outline-primary" role="button" aria-pressed="true">Add Product</a>
+        </div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    letter-spacing: 1pt;
+    font-weight: 250;
+}
+
+.mybg {
+    background-color: rgb(66 172 233);
+    color: white;
+    line-height: 26pt;
+}
+
+.nav-item {
+    border-left: 2px solid white;
+    padding: 0 25pt;
+}
+
+.form-inline {
+    grid-gap: 8pt;
+}
+
+h2{
+    margin: 30pt 0;
+    font-weight: 250;
+}
+
+#mainform {
+    width: 600pt;
+    margin: auto;
+}
+
+.align-right {
+    float: right;
+}
+
+.align-right > a {
+    margin: 20pt 0 20pt 20pt;
+}

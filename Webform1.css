@@ -1,0 +1,26 @@
+form{
+    padding: 5%;
+    font-family:  Calibri;
+    font-size:larger;
+}
+label{
+    margin-top: 2%;
+}
+.inp{
+    margin-top: 1%;
+}       
+button{
+    color: white;
+    background-color: rgb(1, 159, 250);
+    margin-top: 0.5%;
+    padding: 1%;
+    border: none;
+    border-radius: 8%;
+}
+span{
+    font-size:medium;
+    color: grey;
+    margin-bottom: 1%;
+    padding: 0;
+}
+
