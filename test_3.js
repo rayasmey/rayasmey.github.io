@@ -19,13 +19,13 @@ describe("Account", function () {
         account.deposit(10000.00);
 
         it("check the account balance", function () {
-            assert.equal("5000.00", account.getBalance());
+            assert.equal("10000.00", account.getBalance());
         });
     });
 
     describe("check the account info after withdraw 5000.00", function (){
         const account = new Account(5600000010);
-        account.deposit(5000.00);
+        account.deposit(10000.00);
         account.withdraw(5000.00);
 
         it("check the account balance", function () {
