@@ -23,13 +23,13 @@ describe("Account", function () {
         });
     });
 
-    describe("check the account info after withdraw 5000.00", function (){
+    describe("check the account info after withdraw 10000.00", function (){
         const account = new Account(5600000010);
         account.deposit(10000.00);
         account.withdraw(5000.00);
 
         it("check the account balance", function () {
-            assert.equal("5000.00", account.getBalance());
+            assert.equal("5000", account.getBalance());
         });
 
         it("test toString method", function () {
