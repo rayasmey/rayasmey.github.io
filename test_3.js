@@ -14,26 +14,26 @@ describe("Account", function () {
         });
     });
 
-    describe("check the account info after deposit 5000.50", function (){
+    describe("check the account info after deposit 10000.00", function (){
         const account = new Account(5600000010);
-        account.deposit(5000.50);
+        account.deposit(10000.00);
 
         it("check the account balance", function () {
-            assert.equal("5000.50", account.getBalance());
+            assert.equal("5000.00", account.getBalance());
         });
     });
 
-    describe("check the account info after withdraw 2500.50", function (){
+    describe("check the account info after withdraw 5000.00", function (){
         const account = new Account(5600000010);
-        account.deposit(5000.50);
-        account.withdraw(2500.50);
+        account.deposit(5000.00);
+        account.withdraw(5000.00);
 
         it("check the account balance", function () {
-            assert.equal("2500", account.getBalance());
+            assert.equal("5000.00", account.getBalance());
         });
 
         it("test toString method", function () {
-            assert.equal("Account 5600000010: balance 2500", account.toString());
+            assert.equal("Account 5600000010: balance 5000", account.toString());
         });
     });
 
