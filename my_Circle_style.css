@@ -1,0 +1,28 @@
+#box{
+    position: fixed;
+    bottom: 30px;
+    line-height: 20pt;
+    z-index: 100;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 1%;
+    border: none;
+}
+
+.circle{
+    border-radius: 50%;
+    position: absolute;
+    transition:all 1s;
+   -webkit-transition:all 1s;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+}
+
+
