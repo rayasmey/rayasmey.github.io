@@ -35,9 +35,6 @@ app.get("/", (req, res)=>{
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" href="css/${style}.css">
-        <script>
-            func
-        </script>
     </head>
     <body>
         <form action="http://localhost:3000/result" method="post">
@@ -77,5 +74,5 @@ app.get('/output', (req, res) => {
 });
 
 app.listen(3000, ()=>{
-    console.log("Listening to port 3000.......");
+    console.log("Listening to port 3000...");
 });
