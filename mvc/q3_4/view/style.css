@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+}
+#products{
+    background-color: white;
+    color: black;
+    padding: 2%;
+    margin: 2%;
+}
