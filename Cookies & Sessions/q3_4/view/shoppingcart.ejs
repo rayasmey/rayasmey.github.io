@@ -1,0 +1,17 @@
+<a href="/">Home</a>
+<h3>Shopping cart</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+    </tr>
+    <% for (const item of items) { %> 
+    <tr>
+        <td><%=item.name%></td>
+        <td><%=item.quantity%></td>
+        <td><%=item.price%></td>
+    </tr>
+    <% } %>
+</table>
+

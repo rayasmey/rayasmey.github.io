@@ -1,0 +1,21 @@
+<h3>Product</h3>
+<form action="/addToCart" method="post" style="display: flex; flex-direction: column; width: 100pt; row-gap: 5pt;">
+   
+        <label>ID</label>
+        <input value = "<%= item.id %>">
+
+        <label>Name</label>
+        <input name="name" value = "<%= item.name %>">
+
+        <label>Description</label>
+        <input value = "<%= item.description %>">
+
+        <label>Unit Price</label>
+        <input name="price" value = "<%= item.price %>">
+
+        <label>Avail Quantity</label>
+        <input value = "<%= item.quantity %>">
+
+    <input type="submit" value ="Add to Cart">
+</form>
+
