@@ -1,0 +1,23 @@
+<div *ngIf="!isLoggedIn">
+
+    <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+        <div>
+            <label>
+                Username: <span style="margin-left:8px"> </span><input placeholder="Username" [(ngModel)]="user.username" name="username" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Password: <span style="margin-left:10px"> </span><input placeholder="password" name="password" type="password" [(ngModel)]="user.password" />
+            </label>
+        </div>
+    <br/>
+        <button class="btn btn-primary" style="background-color:#2700d7" type="submit">Login</button> &nbsp;
+        <button class="btn btn-primary" style="background-color:#d72b00" type="button" (click)="reset()">Reset</button>
+    </form>
+
+    <br />
+
+    <!-- <div *ngIf="isLoggedIn"> -->
+        <!-- Hello {{name}} <button (click)="onLogout()">Logout</button> -->
+    <!-- </div> -->

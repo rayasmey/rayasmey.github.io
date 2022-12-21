@@ -1,0 +1,108 @@
+{
+	"_id": {
+		"$oid": "6367b560a112ddf4a62f45fc"
+	},
+	"Title": "The Alchemist",
+	"Year": 1988,
+	"Publisher": "Harper Collins",
+	"Author": {
+		"Name_of_Author": "Paulo Coelho",
+		"Year_of_Birth": 1947
+	}
+}
+{
+	"_id": {
+		"$oid": "6367b560a112ddf4a62f45fd"
+	},
+	"Title": "The boy in the striped pajamas",
+	"Year": 2006,
+	"Publisher": "David Fickling Books",
+	"Author": {
+		"Name_of_Author": "John Boyne",
+		"Year_of_Birth": 1971
+	}
+}
+{
+	"_id": {
+		"$oid": "6367b560a112ddf4a62f45fe"
+	},
+	"Title": "Harry Potter and the Sorcerer's Stone",
+	"Year": 2001,
+	"Publisher": "Scholastic Corporation",
+	"Author": {
+		"Name_of_Author": "J.K. Rowling",
+		"Year_of_Birth": 1965
+	}
+}
+{
+	"_id": {
+		"$oid": "6367b95c3a041dc4e1244cc1"
+	},
+	"Title": "The Pilgrimage",
+	"Year": 1987,
+	"Publisher": "Harper Collins",
+	"Author": [
+		{
+			"Name_of_Author": "Paulo Coelho",
+			"Year_of_Birth": 1947,
+			"_id": {
+				"$oid": "6367b95c3a041dc4e1244cc2"
+			}
+		}
+	],
+	"__v": 0
+}
+{
+	"_id": {
+		"$oid": "6367b99e3a041dc4e1244cc4"
+	},
+	"Title": "A Game of Thrones",
+	"Year": 1996,
+	"Publisher": "Bantam Spectra (US) Voyager Books (UK)",
+	"Author": [
+		{
+			"Name_of_Author": "George Raymond Richard Martin",
+			"Year_of_Birth": 1948,
+			"_id": {
+				"$oid": "6367b99e3a041dc4e1244cc5"
+			}
+		}
+	],
+	"__v": 0
+}
+{
+	"_id": {
+		"$oid": "6367b9b53a041dc4e1244cc7"
+	},
+	"Title": "War and Peace",
+	"Year": 1867,
+	"Publisher": "The Russian Messenger ",
+	"Author": [
+		{
+			"Name_of_Author": "Leo Tolstoy",
+			"Year_of_Birth": 1828,
+			"_id": {
+				"$oid": "6367b9b53a041dc4e1244cc8"
+			}
+		}
+	],
+	"__v": 0
+}
+{
+	"_id": {
+		"$oid": "6367d25a7e452b82de4d3535"
+	},
+	"Title": "The Monk who Sold his Ferrari",
+	"Year": 1996,
+	"Publisher": "Harper Collins",
+	"Author": [
+		{
+			"Name_of_Author": "Robin Sharma",
+			"Year_of_Birth": 1964,
+			"_id": {
+				"$oid": "6367d25a7e452b82de4d3536"
+			}
+		}
+	],
+	"__v": 0
+}

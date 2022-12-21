@@ -1,0 +1,69 @@
+<h1> {{book.Title}}
+
+    <a *ngIf="isLoggedIn" href="javascript:void(0);" (click)="onEditTitle()">Edit</a><br />
+</h1>
+<form *ngIf="isEditTitle" #updatePartialYearForm="ngForm" (ngSubmit)="onPartialUpdate()">
+    <div class="form-group" style="padding: 25px 400px 2px 0;">
+        <input class="form-control" required name="Title" [(ngModel)]="book.Title"><br>
+    </div>
+    <button type="button" (click)="onPartialUpdate()" class="btn btn-primary">Save</button>
+</form>
+<br />
+
+
+<span>Year: &nbsp; {{book.Year}} &nbsp;&nbsp;&nbsp;
+    <a *ngIf="isLoggedIn" href="javascript:void(0);" (click)="onEditYear()">Edit</a></span><br />
+<form *ngIf="isEditYear" #updatePartialYearForm="ngForm" (ngSubmit)="onPartialUpdate()">
+    <div class="form-group" style="padding: 25px 400px 2px 0;">
+        <input class="form-control" required name="Year" [(ngModel)]="book.Year"><br>
+    </div>
+    <button type="button" (click)="onPartialUpdate()" class="btn btn-primary">Save</button>
+</form>
+<span>Publisher: &nbsp; {{book.Publisher}} &nbsp;&nbsp;&nbsp;
+    <a *ngIf="isLoggedIn" href="javascript:void(0);" (click)="onEditPublisher()">Edit</a></span><br />
+<form *ngIf="isEditPublisher" #updatePartialYearForm="ngForm" (ngSubmit)="onPartialUpdate()">
+    <div class="form-group" style="padding: 25px 400px 2px 0;">
+        <input class="form-control" required name="Publisher" [(ngModel)]="book.Publisher"><br>
+    </div>
+    <button type="button" (click)="onPartialUpdate()" class="btn btn-primary">Save</button>
+</form>
+<div class="form-group">Name of Author: &nbsp;
+    <li *ngFor="let author of book.Author">
+        {{author.Name_of_Author}} &nbsp;&nbsp;&nbsp;
+
+        <a *ngIf="isLoggedIn" href="javascript:void(0);" (click)="onEditNameofAuthor()">Edit</a>
+        <br />
+        <form *ngIf="isEditNameofAuthor" #updatePartialYearForm="ngForm" (ngSubmit)="onPartialAuthorNameUpdate()">
+            <div class="form-group" style="padding: 25px 400px 2px 0;">
+                <input class="form-control" required name="Name_of_Author" [(ngModel)]="author.Name_of_Author"><br>
+            </div>
+            <button type="button" (click)="onPartialAuthorNameUpdate()" class="btn btn-primary">Save</button>
+        </form>
+    </li>
+</div>
+
+<div class="form-group"> Year of Birth: &nbsp;
+    <li *ngFor="let author of book.Author">
+        {{author.Year_of_Birth}} &nbsp;&nbsp;&nbsp;
+
+        <a *ngIf="isLoggedIn" href="javascript:void(0);" (click)="onEditYearofBirth()">Edit</a>
+        <br />
+        <form *ngIf="isEditYearofBirth" #updatePartialYearForm="ngForm" (ngSubmit)="onPartialAuthorBirthdateUpdate()">
+            <div class="form-group" style="padding: 25px 400px 2px 0;">
+                <input class="form-control" required name="Year_of_Birth" [(ngModel)]="author.Year_of_Birth"><br>
+            </div>
+            <button type="button" (click)="onPartialAuthorBirthdateUpdate()" class="btn btn-primary">Save</button>
+        </form>
+    </li>
+</div>
+
+<br>
+<button *ngIf="isLoggedIn" class="btn btn-primary" style="background-color:hsl(244, 85%, 63%)"
+    routerLink="/addauthor/{{book._id}}">Add Author</button>&nbsp;
+<button *ngIf="isLoggedIn" class="btn btn-primary" style="background-color:hsl(244, 90%, 38%)"
+    routerLink="/updateauthor/{{book._id}}">Update Author</button>&nbsp;
+<button *ngIf="isLoggedIn" class="btn btn-primary" style="background-color:#f1bb4e"
+    routerLink="/update/{{book._id}}">Update Book</button>
+&nbsp;
+<button *ngIf="isLoggedIn" class="btn btn-primary" style="background-color:#f14e4e" (click)="deleteBook()">Delete
+    Book</button>

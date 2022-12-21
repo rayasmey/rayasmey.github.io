@@ -1,0 +1,17 @@
+<li *ngFor="let author of author.Author">
+    <div class="form-group" style="padding: 25px 400px 0px 0;"> 
+<form #updateauthorForm="ngForm" (ngSubmit)="onAuthorUpdate()">
+    <div class="form-group" style="padding: 25px 400px 0px 0;">
+        <label >Author</label>
+        <input  class="form-control" required name="Name_of_Author" [(ngModel)]="author.Name_of_Author">
+   
+        <label >Year of Birth</label>
+        <input  class="form-control" required name="Year_of_Birth" [(ngModel)]="author.Year_of_Birth">
+    </div>
+    <br>
+    <button type="button" (click)= "onAuthorUpdate()" class="btn btn-primary">Save</button>
+</form>
+</div>
+</li>
+
+

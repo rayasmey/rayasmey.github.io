@@ -1,0 +1,26 @@
+<form #addbookForm="ngForm" (ngSubmit)="onSubmit()">
+    <div  class="form-group" style="padding: 25px 400px 2px 0;"> 
+        <label> Title </label>
+            <input class="form-control" placeholder="Book Title" [(ngModel)]="author.Title" name="Title"/>
+    </div>
+    <div class="form-group" style="padding: 25px 400px 0px 0;"> 
+        <label> Year </label>
+             <input class="form-control" placeholder="Year of Publish" [(ngModel)]="author.Year" name="Year"/>
+    </div>
+    <div class="form-group" style="padding: 25px 400px 0px 0;"> 
+        <label> Publisher </label>
+            <input class="form-control" placeholder="Publisher" [(ngModel)]="author.Publisher" name="Publisher" />
+    </div>
+    <div class="form-group" style="padding: 25px 400px 0px 0;"> 
+        <label> Author </label>
+            <input class="form-control" placeholder="Author" [(ngModel)]="author.Name_of_Author" name="Name_of_Author" />
+    </div>
+    <div class="form-group" style="padding: 25px 400px 0px 0;"> 
+        <label> Year of Birth </label>
+           <input class="form-control" placeholder="Year of Birth" [(ngModel)]="author.Year_of_Birth" name="Year_of_Birth" />
+    </div>
+    <br/>
+    <button class="btn btn-primary" style="background-color:#283280" type="submit">Add</button>
+</form>
+
+

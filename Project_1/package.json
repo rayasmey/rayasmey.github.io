@@ -1,0 +1,23 @@
+{
+  "name": "try_mongo",
+  "version": "1.0.0",
+  "description": "My Books Collection",
+  "main": "books_app.js",
+  "scripts": {
+    "start-backend": "nodemon --inspect",
+    "start-frontend": "cd ./public/App_01/ && npm start",
+    "start" : "npm run start-backend | npm run start-frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raytu Bitew",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.1"
+  }
+}

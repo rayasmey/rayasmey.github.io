@@ -1,0 +1,9 @@
+<nav>
+    <button class="btn btn-primary" style="background-color:#84f14e" routerLink="/">Home</button>   <!--static routing -->
+    <button class="btn btn-primary" style="background-color:#4e9af1" routerLink="/books">Books</button>  <!--static routing-->
+    <button class="btn btn-primary" style="background-color:#9a4ef1; float: right;" routerLink="/register" *ngIf = "!loggedIn">Register</button>
+    <button class="btn btn-primary" style="background-color:#960568" routerLink="/addbook" *ngIf = "loggedIn">Add Book</button>
+    <button class="btn btn-primary" style="background-color:#f14ebd; float: right;" routerLink="/login" *ngIf = "!loggedIn">Login</button>
+    <button class="btn btn-primary" style="background-color:#f14ebd; float: right;" *ngIf = "loggedIn" (click)="onLogout()">Logout</button>
+</nav>
+<h5 style="float:right">Hello {{username}}</h5>
