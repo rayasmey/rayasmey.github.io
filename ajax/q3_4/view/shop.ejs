@@ -1,0 +1,7 @@
+<h2>Everest shopping system</h2>
+<h3>Shop</h3>
+<ol>
+    <% for (const item of productList) { %>
+        <li><a href="/product?id=<%=item.id%>"><%= item.name %></a></li>
+    <% } %>
+</ol>
